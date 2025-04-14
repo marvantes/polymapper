@@ -1,0 +1,246 @@
+.header {
+  position: absolute;
+  z-index: 10;
+  left: 30px;
+  width: 768px;
+  text-align: center;
+
+  .wrap {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+    padding: 15px 15px;
+  }
+
+  .action-buttons {
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: 15px;
+    position: relative;
+    min-height: 45px;
+  }
+}
+
+.adress-search {
+  padding: 15px 15px;
+  border-radius: 50px;
+  display: flex;
+  flex-wrap: wrap;
+  position: relative;
+  z-index: 10;
+  background: #fff;
+  box-shadow: inset 9.91px 9.91px 15px #d9dade, inset -9.91px -9.91px 15px #fff;
+
+  p {
+    position: absolute;
+    top: 100%;
+    width: 80%;
+    padding: 10px;
+    left: 0px;
+    right: 0px;
+    text-transform: uppercase;
+    margin: auto;
+    font-weight: bold;
+    font-size: 20px;
+    text-align: center;
+    margin-top: 5px;
+    border-radius: 10px;
+    background: rgba(255, 255, 255, 0.8);
+  }
+}
+
+.adress-search-input {
+  border: 1px solid #dedede;
+  padding: 8px 0px 8px 20px;
+  height: 45px;
+  border-radius: 25px;
+  min-width: 500px;
+  outline: none;
+  font-size: 18px;
+  margin-right: 15px;
+
+  &:focus-visible {
+    border-color: #60b5ff;
+  }
+}
+
+.adress-search-button {
+  border: 1px solid #60b5ff;
+  height: 45px;
+  border-radius: 25px;
+  padding: 0px;
+  margin: 0px;
+  background: #60b5ff;
+  width: 45px;
+  font-size: 20px;
+  color: white;
+  cursor: pointer;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  align-content: center;
+  justify-content: center;
+  background: linear-gradient(145deg, #56a3e6, #67c2ff);
+  box-shadow: 20px 20px 60px #529ad9, -20px -20px 60px #6ed0ff;
+
+  &:hover {
+    background: linear-gradient(145deg, #56a3e6, #67c2ff);
+    border-color: white;
+  }
+}
+
+.allow-drawing-button {
+  border: 1px solid #60b5ff;
+  height: 45px;
+  border-radius: 25px;
+  padding: 0px;
+  margin: 0px 0px 0px 0px;
+  background: #60b5ff;
+  width: 45px;
+  font-size: 20px;
+  position: relative;
+  z-index: 5;
+  color: white;
+  cursor: pointer;
+  display: flex;
+  transition: 0.3s all;
+  flex-wrap: wrap;
+  align-items: center;
+  align-content: center;
+  justify-content: center;
+  background: linear-gradient(145deg, #56a3e6, #67c2ff);
+
+  &:hover {
+    background: linear-gradient(145deg, #56a3e6, #67c2ff);
+    border-color: white;
+  }
+
+  &.cancel {
+    border-radius: 50px;
+    border: 1px solid #e83f25;
+    background: linear-gradient(145deg, #d13921, #f84328);
+
+    &:hover {
+      background: linear-gradient(145deg, #d13921, #f84328);
+      border-color: white;
+    }
+  }
+
+  &.disabled {
+    display: none;
+  }
+}
+
+.save-drawing-button {
+  height: 45px;
+  border-radius: 25px;
+  padding: 0px;
+  margin: 0px 0px 0px 0px;
+  width: 45px;
+  font-size: 20px;
+  position: absolute;
+  z-index: 4;
+  opacity: 0;
+  top: 0px;
+  left: 0px;
+  color: white;
+  cursor: pointer;
+  display: flex;
+  transition: 0.3s all;
+  flex-wrap: wrap;
+  align-items: center;
+  align-content: center;
+  justify-content: center;
+  border-radius: 50px;
+  border: 1px solid #e83f25;
+  background: linear-gradient(145deg, #d13921, #f84328);
+
+  &:hover {
+    background: linear-gradient(145deg, #d13921, #f84328);
+    border-color: white;
+  }
+
+  &.open {
+    left: 60px;
+    opacity: 1;
+  }
+
+  &.editOpen {
+    left: 0px;
+    opacity: 1;
+  }
+}
+
+.reset-button {
+  border: 1px solid #f44174;
+  height: 45px;
+  border-radius: 25px;
+  padding: 0px;
+  margin: 0px 0px 0px 15px;
+  width: 45px;
+  font-size: 20px;
+  position: relative;
+  z-index: 4;
+  opacity: 1;
+  top: 0px;
+  left: 0px;
+  color: white;
+  cursor: pointer;
+  display: none;
+  transition: 0.3s all;
+  flex-wrap: wrap;
+  align-items: center;
+  align-content: center;
+  justify-content: center;
+  background: #f44174;
+
+  &:hover {
+    background: #f44174;
+    border-color: white;
+  }
+
+  &.open {
+    display: flex;
+  }
+}
+
+.edit-drawing-button {
+  border: 1px solid #ea7300;
+  height: 45px;
+  border-radius: 25px;
+  padding: 0px;
+  margin: 0px 0px 0px 0px;
+  width: 45px;
+  font-size: 20px;
+  position: absolute;
+  z-index: 4;
+  opacity: 0;
+  top: 0px;
+  left: 0px;
+  color: white;
+  cursor: pointer;
+  display: flex;
+  transition: 0.3s all;
+  flex-wrap: wrap;
+  align-items: center;
+  align-content: center;
+  justify-content: center;
+  background: linear-gradient(145deg, #d36800, #fa7b00);
+
+  &:hover {
+    background: linear-gradient(145deg, #d36800, #fa7b00);
+    border-color: white;
+  }
+
+  &.hide {
+    display: none;
+  }
+
+  &.enabled {
+    left: 0px;
+    z-index: 10;
+    opacity: 1;
+  }
+}
