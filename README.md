@@ -6,19 +6,17 @@ DEMO: https://polymapper.koderhtml.cz/
 
 Klonuj repozitář
 ```
-bash git clone https://github.com/tvoje-uzivatelske-jmeno/polymapper.git
+git clone https://github.com/tvoje-uzivatelske-jmeno/polymapper.git
 cd polymapper
 ``` 
 
 Nainstaluj závislosti
 ```
-bash
 npm install
 ```
 
 Spusť vývojový server
 ```
-bash
 npm run dev
 ```
 
