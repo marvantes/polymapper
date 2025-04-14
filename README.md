@@ -1,6 +1,8 @@
 🗺️ Polymapper
 Polymapper je webová aplikace postavená na Reactu sloužící k základní práci a editaci polyčáry.
 
+DEMO: https://polymapper.koderhtml.cz/
+
 ⚙️ Jak spustit projekt
 
 Klonuj repozitář
