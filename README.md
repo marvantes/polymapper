@@ -6,7 +6,7 @@ DEMO: https://polymapper.koderhtml.cz/
 
 Klonuj repozitář
 ```
-git clone https://github.com/tvoje-uzivatelske-jmeno/polymapper.git
+git clone https://github.com/marvantes/polymapper.git
 cd polymapper
 ``` 
 
